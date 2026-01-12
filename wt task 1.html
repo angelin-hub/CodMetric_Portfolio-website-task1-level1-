@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracy Angelin | Portfolio</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial,sans-serif;
+      }
+      body{
+        background:linear-gradient(135deg,#910570,#dc84cc);
+        color:#090110;
+      }
+      header{
+        padding:20px;
+        text-align:center;
+        background:rgba(133,12,207,0.315);
+      }
+      header h1{
+        font-size:2.5rem;
+      }
+      header p{
+        margin-top:10px;
+        font-size:1.1rem;
+      }
+      section{
+        padding:40px 20px;
+      }
+      .container{
+        max-width:1100px;
+        margin:auto;
+      }
+      h2{
+        text-align:center;
+        margin-bottom:30px;
+        font-size:2rem;
+      }
+      /*About*/
+      .about p{
+        text-align: center;
+        max-width:800px;
+        margin:auto;
+        line-height:1.9;
+      }
+      /*skills*/
+      .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(150px, 1fr));
+      gap:20px;
+      }
+      .skill{
+        background:rgba(255,255,255,0.12);
+        padding:20px;
+        text-align:center;
+        border-radius:10px;
+        transition:transform 0.3s,background 0.3s;
+      }
+      .skill:hover{
+        transform:translateY(-8px);
+        background:rgba(23,1,21,0.553);
+      }
+      /*Project*/
+      .project-flex{
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content: center;
+      }
+      .project{
+        background:rgba(255,255,255,0.15);
+        width:300px;
+        padding:20px;
+        border-radius:10px;
+        transition:transform 0.3s;
+      }
+      .project:hover{
+        transform:scale(1.05);
+      }
+      /*Contact*/
+      .contact{
+          text-align:center;
+        }
+        .contact button{
+          margin-top: 15px;
+          padding:12px 25px;
+          font-size:1rem;
+          border:none;
+          border-radius:25px;
+          background: #f3eeee;
+          color:#fc25c6;
+          cursor:pointer;
+          transition:background 0.3s, color 0.3s;
+        }
+        .contact button:hover{
+          background:#2a08e7;
+          color:#f4eef3;
+
+        }
+        footer{
+          text-align:center;
+          padding:15px;
+          background:rgba(246,12,52,0.3);
+          font-size:0.9rem;
+        }
+        @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <font face="verdana">Gracy Angelin</font>
+        </h1>
+        <p>Aspiring Web Developer | codMetric Intern</p>
+    </header>
+    <section class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a motivated student and aspiring web developer with a 
+          srong intersest in building responsive and user-friendly website.
+          Currently, I am completing a task-based internship at CodMetric, where
+         i am improving my practical skills in HTML,CSS and ptoblem solving.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="container">
+        <h2>skills</h2>
+        <div class="skills-grid">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">Python</div>
+          <div class="skill">C Programming</div>
+          <div class="skill">Problem Solving</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <h2>projects</h2>
+        <div class="project-flex">
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>Designed and developed a personal portofilo website using HTML and 
+            CSS,implemeting Flexbox and Grid for responsive layout design.</p>
+        </div>
+        <div class="project">
+          <h3>Python Mini Project</h3>
+          <p>Created basic programming projects to improve logical thinking and coding skills.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email:gracyangelin@karunya.edu.in</p>
+            <button>Contact Me</button>
+      </div>
+    </section>
+
+    <footer>
+      ©2026 Gracy Angelin  | CodMetric Internship
+    </footer>
+  </body>
+</html>
